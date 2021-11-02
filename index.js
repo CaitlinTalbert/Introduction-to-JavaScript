@@ -250,9 +250,21 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(expected){
+  if (expected >= 90) {
+    return `you got an A`;
+  } else if (expected < 90 && expected >= 80) {
+    return `you got a B`;
+  } else if (expected < 80 && expected >= 70) {
+    return `you got a C`;
+  } else if (expected < 70 && expected >= 60) {
+    return `you got a D`;
+  } else if (expected < 60) {
+    return `you got an F`;
+  }
 }
+ 
+  console.log('task 7', grade(95)); 
 
 
 
